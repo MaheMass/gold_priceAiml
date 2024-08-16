@@ -153,4 +153,5 @@ X_test_2024 = np.reshape(X_test_2024, (X_test_2024.shape[0], X_test_2024.shape[1
 pred_price = model.predict(X_test_2024)
 pred_price = scaler.inverse_transform(pred_price)  # undo scaling
 
-print("Predicted Gold Price for the first day of 2024 is: ", pred_price)
+print("Predicted Gold Price for the first day of 2024 month is: ", pred_price)
+print(df)
